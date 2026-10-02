@@ -12,4 +12,11 @@ Java: The backend of our application is orchestrating using Java controllers and
 ## Database
 MySQL & DBeaver: Our data is hosted on a remote MySQL server where parking spot, car, and personal information is neatly stored to be pulled back out and transformed into Java objects. We primarily interacted with our database through the help of a management tool called DBeaver. After discovering latency problems, we converted our database connection to a Singleton Pattern where the application accesses a single, global connection point to maintain performace.
 
+## Jackson's Contributions
+- Designed the parking map scene and corresponding controller (FXMLController.java)
+- Implemented car registration controller and added ability to select cars (CarRegistrationController.java)
+- Create DB connection and refactored into Singleton Pattern for performance improvements
+- Created the parking spot model to capture critical information like position, space type, etc. (ParkingSpot.java)
+- Integrated Stripe API to access payment system using secure token authentication and redirect.
+
 Please watch our demonstration of our application and hard work!: https://youtu.be/Sgfebme__08
